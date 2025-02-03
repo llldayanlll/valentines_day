@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f5f5dc; /* Light beige */
+    cursor: none; /* Hide the default cursor */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Cat paw (smaller now) */
+  #paw {
+    position: absolute;
+    width: 50px;  /* reduced from 80px */
+    height: 50px; /* reduced from 80px */
+    pointer-events: none;
+    z-index: 1000; /* Ensure it stays above the mouse */
+  }
+  
+  /* Mouse image (bigger now) */
+  #mouse {
+    position: absolute;
+    width: 100px;  /* increased from 60px */
+    height: 100px; /* increased from 60px */
+    z-index: 1;
+  }
+  
+  /* Score display styling */
+  #score {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Target display styling */
+  #target {
+    position: fixed;
+    top: 10px;
+    left: 150px; /* Positioned beside the score */
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Victory message styling */
+  #victory {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: green;
+    background: white;
+    padding: 20px;
+    border: 2px solid green;
+  }
+  
